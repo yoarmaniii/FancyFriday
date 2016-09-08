@@ -21,11 +21,16 @@
 		boolean sunny = false;
 		boolean raining = false;
 		
+		String inputContinue;
+		boolean userContinue;
+		userContinue = true;
+		
 		//Get input from the user
 		Scanner userInput = new Scanner(System.in);
 		
+		while(userContinue)
+		{
 		System.out.println( " Is it fancy friday? ");
-		
 		inputFancyFriday = userInput.nextLine();
 		
 		System.out.println( " Is it sunny? ");
@@ -41,7 +46,7 @@
 		System.out.println(fancyFriday);
 		System.out.println(sunny);
 		System.out.println(raining);
-	
+		
 		
 		
 		//Set condition variables based on user input
@@ -70,9 +75,16 @@
 			System.out.println("Tshirt and Jeans");
 		}
 		
-		
+		System.out.println("Continue?");
+		inputContinue = userInput.nextLine();
+		if(inputContinue.equals("yes")){
+			userContinue = true;
+		} else{
+			userContinue = false;
+		}
 		
 
 	}
 
+}
 }
