@@ -57,7 +57,18 @@
 			raining = true;	
 		}	
 		//set the If statements to decide what to wear
-		
+		if(fancyFriday){
+			if(sunny){
+				System.out.println( "teagown");
+			}else if(raining){
+			System.out.println("Powersuit");
+			} else {
+			System.out.println("Long Gown");
+			}
+	
+		}else {
+			System.out.println("Tshirt and Jeans");
+		}
 		
 		
 		
